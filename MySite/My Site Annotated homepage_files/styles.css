@@ -1,0 +1,208 @@
+
+
+/* Define Global Default Css */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Define Default Global Font Sizes */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Define Global Helper Styles */
+
+.center {
+    text-align: center;
+}
+
+.margin-bottom_five {
+    margin-bottom: 5px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+
+
+/* Define Navigation Styles */
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    display: flex;
+    padding: 20px;
+}
+
+
+/*Define Hero*/
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.col-1, .col-2, col-3 {
+  width: 33%;
+}
+
+.col-1 h1{
+  text-align: right;
+}
+.hero-img {
+  max-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Define Card Styles */
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto auto 60px auto;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    width: 40%;
+    margin: 20px;
+}
+
+.card a {
+    text-decoration: none !important;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card-copy {
+    padding: 0 20px 20px 20px;
+
+}
+
+/* Define Footer Styles */
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+/*Media Queries Which Tell the Code How to Resize */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-container_img {
+        min-width: 100%;
+    }
+
+    .hero-container_copy {
+        min-width: 100%;
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+}
